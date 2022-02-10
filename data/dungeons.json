@@ -1,0 +1,1202 @@
+[
+	{
+		"id": "under_dreaam",
+		"name": "底层梦境[黄泉前置]",
+		"desc": "梦境的深处,实界的边缘,这里的时间流速更快,环境更危险",
+		"require": "evt_hq",
+		"title": "悟梦者",
+		"level": 1,
+		"length": 50,
+		"run": {
+			"back_dream": 0.1,
+			"hp": 0.9,
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -0.8
+		},
+		"result": {
+			"snp_data": "2~7",
+			"zero_crystal": "2~7"
+		},
+		"boss": "dreamloot",
+		"spawns": [
+			[
+				"smz",
+				"smz"
+			],
+			[
+				"smz",
+				"smz",
+				"noshadow"
+			],
+			"balckwu",
+			[
+				"noshadow",
+				"balckwu"
+			]
+		]
+	},
+	{
+		"id": "hq_1",
+		"name": "荒芜边境[黄泉]",
+		"desc": "不存在于现实的地点,或许这里可以破解永生之密。这里的时间流速更快,环境更危险",
+		"require": "g.under_dreaam>=1",
+		"level": 1,
+		"length": 25,
+		"run": {
+			"back_dream": 0.1,
+			"hp": 0.3,
+			"stamina": 1,
+			"tili": 1,
+			"time": -0.8
+		},
+		"result": {
+			"shuaibai_core": "1~3",
+			"snp_data": "3~7",
+			"zero_crystal": "3~7"
+		},
+		"boss": "death_ling",
+		"spawns": [
+			[
+				"death_ling",
+				"death_ling"
+			],
+			[
+				"smz",
+				"smz"
+			],
+			[
+				"smz",
+				"smz",
+				"noshadow"
+			],
+			"death_ling",
+			"balckwu",
+			[
+				"noshadow",
+				"balckwu"
+			]
+		]
+	},
+	{
+		"id": "hq_2",
+		"name": "荒芜大河[黄泉]",
+		"desc": "不存在于现实的地点,或许这里可以破解永生之密。这里的时间流速更快,环境更危险",
+		"require": "g.under_dreaam>=1",
+		"level": 1,
+		"length": 15,
+		"run": {
+			"back_dream": 0.2,
+			"hp": 0.3,
+			"stamina": 1,
+			"tili": 1,
+			"time": -1
+		},
+		"result": {
+			"lxue": "2~3",
+			"snp_data": "1~3",
+			"zero_crystal": "1~5"
+		},
+		"boss": "river_wheel",
+		"spawns": [
+			[
+				"death_ling",
+				"river_ghost",
+				"river_ghost"
+			],
+			[
+				"smdeath_lingz",
+				"river_ghost",
+				"smz"
+			],
+			[
+				"death_ling",
+				"smz",
+				"noshadow"
+			],
+			"death_ling",
+			"river_ghost",
+			"balckwu",
+			[
+				"noshadow",
+				"balckwu"
+			]
+		]
+	},
+	{
+		"id": "hq_mo_1",
+		"name": "无光平原[魔导]",
+		"desc": "无法看见光明。这里的时间流速更快,环境更危险",
+		"require": "g.evt_modao>=1",
+		"level": 1,
+		"length": 30,
+		"run": {
+			"back_dream": 0.2,
+			"hp": 1,
+			"shuaibai": -0.1,
+			"tili": 1,
+			"time": -3
+		},
+		"result": {
+			"lxue": "0~3",
+			"shuaibai_core": "0~3",
+			"nolight_core": "1~3"
+		},
+		"boss": "huian_fashi",
+		"spawns": [
+			[
+				"noshadow",
+				"noshadow",
+				"noshadow",
+				"noshadow",
+				"noshadow"
+			],
+			[
+				"haojiaozhe",
+				"haojiaozhe",
+				"haojiaozhe"
+			],
+			[
+				"bujiezhe",
+				"haojiaozhe",
+				"noshadow"
+			]
+		]
+	},
+	{
+		"id": "yysl",
+		"name": "月影森林",
+		"desc": "繁茂的森林,地表常年处于阴影之中。",
+		"require": "evt_zcx",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"yqlm": "3~7"
+		},
+		"boss": "tree_man",
+		"spawns": [
+			[
+				"xg",
+				"muling"
+			],
+			[
+				"yyx",
+				"small_tree_man"
+			],
+			"yyx",
+			"xg",
+			[
+				"muling",
+				"muling"
+			],
+			"small_tree_man"
+		]
+	},
+	{
+		"id": "slsc",
+		"name": "森林深处[滴露花,灵壤,阳露珠]",
+		"desc": "繁茂的森林,地表常年处于阴影之中。",
+		"require": "g.yysl>=1 && g.evt_tansuo_1>=1",
+		"level": 20,
+		"dist": 250,
+		"length": 20,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"yqlm": 3,
+			"diluhua": 5,
+			"lingrang": "2~4",
+			"yangluzhu": 5
+		},
+		"boss": ["tree_man","tree_man"],
+		"spawns": [
+			[
+				"small_tree_man",
+				"small_tree_man"
+			],
+			[
+				"yyx",
+				"yyx"
+			],
+			"yyx",
+			"xg",
+			[
+				"muling",
+				"muling"
+			],
+			"small_tree_man"
+		]
+	},
+	{
+		"id": "jlss",
+		"name": "巨灵山",
+		"desc": "最巍峨的山脉，最纯正的金石之力",
+		"require": "evt_zcx",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"cbjs": "2~5"
+		},
+		"boss": "gold_man",
+		"spawns": [
+			[
+				"sy",
+				"sy"
+			],
+			[
+				"fjian",
+				"yanj"
+			],
+			"yanj",
+			"sy",
+			[
+				"sy",
+				"fjian"
+			]
+		]
+	},
+	{
+		"id": "dmhs",
+		"name": "地脉火山",
+		"desc": "喷发着岩浆,散发着恐怖的高温",
+		"require": "evt_zcx",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"yxls": "3~7"
+		},
+		"boss": "fire_bird",
+		"spawns": [
+			[
+				"fireb",
+				"huoj"
+			],
+			[
+				"fireb",
+				"huoj"
+			],
+			"hls",
+			"fireb",
+			[
+				"hls",
+				"huoj"
+			]
+		]
+	},
+	{
+		"id": "hsby",
+		"name": "火山边缘[红衫,火伤藤]",
+		"desc": "喷发着岩浆,散发着恐怖的高温",
+		"require": "g.dmhs>=1 && g.evt_tansuo_1>=1",
+		"level": 20,
+		"dist": 200,
+		"length": 18,
+		"run": {
+			"stamina": 0.9,
+			"tili": 2,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"yxls": "1~3",
+			"hongshan": 4,
+			"huoshangteng": 5
+		},
+		"boss": "fire_bird",
+		"spawns": [
+			[
+				"fireb",
+				"fire_bird"
+			],
+			[
+				"fireb",
+				"huoj"
+			],
+			"fire_bird",
+			"fireb",
+			[
+				"hls",
+				"huoj"
+			]
+		]
+	},
+	{
+		"id": "lzdh",
+		"name": "劳泽大湖",
+		"desc": "泥泞的沼泽,庞大的湖泊",
+		"require": "evt_zcx",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"wgys": "4~5"
+		},
+		"boss": "lake_wheel",
+		"spawns": [
+			[
+				"waterj",
+				"syu"
+			],
+			[
+				"syu",
+				"waterj"
+			],
+			"sls",
+			"syu",
+			[
+				"waterj",
+				"sls"
+			]
+		]
+	},
+	{
+		"id": "glpd",
+		"name": "古老盆地",
+		"desc": "存在几万年的古老盆地,有着纯粹的厚土之力",
+		"require": "evt_zcx",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"zdht": "5~6"
+		},
+		"boss": "tu_bird",
+		"spawns": [
+			[
+				"wggg",
+				"tuj"
+			],
+			[
+				"wggg",
+				"tls"
+			],
+			"tls",
+			"tuj",
+			[
+				"tuj",
+				"tls"
+			]
+		]
+	},
+	{
+		"id": "pendizx",
+		"name": "盆地中心[土金,岩火,水银花]",
+		"desc": "存在几万年的古老盆地,有着纯粹的厚土之力",
+		"require": "g.glpd>=1 && g.evt_tansuo_1>=1",
+		"level": 20,
+		"dist": 250,
+		"length": 18,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -2
+		},
+		"result": {
+			"zdht": "5~6",
+			"tujin": 5,
+			"yanhuo": 4,
+			"shuiyinhua": 5
+		},
+		"boss": "tu_bird",
+		"spawns": [
+			[
+				"wggg",
+				"tu_bird"
+			],
+			[
+				"wggg",
+				"tls"
+			],
+			"tu_bird",
+			[
+				"tu_bird",
+				"tls"
+			]
+		]
+	},
+	{
+		"id": "zxzc",
+		"name": "中型战场",
+		"desc": "曾经发生战争",
+		"require": "evt_zxzc",
+		"level": 20,
+		"dist": 200,
+		"length": 40,
+		"run": {
+			"stamina": 0.9,
+			"tili": 0.9,
+			"time": -1
+		},
+		"result": {
+			"snp_data": 5,
+			"zero_crystal": 7,
+			"lxue": 5
+		},
+		"boss": "xiantianzhuji",
+		"spawns": [
+			[
+				"m_solid_2",
+				"m_solid_4",
+				"m_solid_4"
+			],
+			[
+				"m_solid_2",
+				"m_solid_3"
+			],
+			[
+				"xiantianzhuji",
+				"m_solid_4"
+			],
+			[
+				"xiantianzhuji",
+				"m_solid_4",
+				"m_solid_4"
+			],
+			"m_solid_3",
+			"m_solid_4",
+			[
+				"m_solid_3",
+				"m_solid_4"
+			]
+		]
+	},
+	{
+		"id": "zhujijie",
+		"name": "五环之劫[五环-普通]",
+		"sym": "☯⚡",
+		"desc": "通过此副本来渡过天劫。你可以重复尝试。通关后获得【筑基-命玄】前置。【如果通关了则无法进入[本源劫]】",
+		"require": "evt_zjztj",
+		"title": "应劫者",
+		"max": 1,
+		"dist":1,
+		"level": 30,
+		"length": 5,
+		"run": {
+			"time": -20
+		},
+		"result": {
+			"zhuji_tianjie_1": 1
+		},
+		"boss": "shuijie_1",
+		"spawns": [
+			"mujie_1",
+			"huojie_1",
+			"tujie_1",
+			"jinjie_1"
+		]
+	},
+	{
+		"id": "zhujijie_1",
+		"name": "本源之劫[五环-困难]",
+		"sym": "☯⚡",
+		"desc": "通过此副本来渡过天劫。你可以重复尝试。通关后获得【筑基-破道】前置",
+		"require": "evt_benyuanjie",
+		"title": "破劫者",
+		"max": 1,
+		"dist":1,
+		"level": 30,
+		"length": 4,
+		"run": {
+			"time": -26
+		},
+		"result": {
+			"zhuji_tianjie_3": 1
+		},
+		"boss": "zhenyang",
+		"spawns": [
+			[
+				"wuxiangmo",
+				"wuxiangling"
+			],
+			[
+				"mujie_1",
+				"huojie_1"
+			],
+			[
+				"tujie_1",
+				"jinjie_1"
+			],
+			[
+				"huojie_1",
+				"shuijie_1"
+			]
+		]
+	},
+	{
+		"id": "wuguangjie_1",
+		"name": "无光深渊[混沌-普通]",
+		"sym": "☯⚡",
+		"desc": "通过此副本来渡过天劫。你可以重复尝试。通关后获得【筑基-落日】前置",
+		"require": "evt_wgsy",
+		"title": "应劫者",
+		"max": 1,
+		"dist":1,
+		"level": 30,
+		"length": 2,
+		"run": {
+			"time": -26
+		},
+		"result": {
+			"zhuji_tianjie_2": 1
+		},
+		"boss": "luor",
+		"spawns": [
+			[
+				"wuxiangmo",
+				"wuxiangling"
+			]
+		]
+	},
+	{
+		"id": "sunnyfield",
+		"name": "Sunny Field",
+		"level": 1,
+		"length": 10,
+		"require": "evt_helper",
+		"run": {
+			"stamina": 0.4
+		},
+		"result": {
+			"gold": "5~10"
+		},
+		"loot": {
+			"maxlevel": 1
+		},
+		"boss": {"10":[
+			"kakapo"
+		]},
+		"spawns": [
+			"gardengnome",
+			[
+				"newt",
+				"newt",
+				"newt"
+			],
+			"lgmouse",
+			"bigstone",
+			"stingybee",
+			"smsnake",
+			"twikman"
+		],
+		"flavor": "Every budding mage needs to start somewhere."
+	},
+	{
+		"id": "placidgrove",
+		"name": "Placid Grove",
+		"require": "sunnyfield",
+		"level": 2,
+		"length": 12,
+		"run": {
+			"stamina": 0.5
+		},
+		"result": {
+			"gold": "7~14"
+		},
+		"loot": {
+			"maxlevel": 2
+		},
+		"spawns": [
+			[
+				"stingybee",
+				"stingybee"
+			],
+			"lgrat",
+			"smbox",
+			"gremlin",
+			"angrybird",
+			"smsnake"
+		],
+		"desc": "An idyllic grove for a walk or long nap."
+	},
+	{
+		"id": "pestcontrol",
+		"name": "Leaky Cellar",
+		"require": "g.sunnyfield>0&&(g.apprentice.value>0||g.neophyte.value>0)",
+		"start": {
+			"name": "Pest Control",
+			"desc": "After your daily castigation, your master mentions the rats in the basement have become a problem. Something about stolen shortswords and building barricades. You had better go down and deal with it."
+		},
+		"repeat": false,
+		"level": 3,
+		"length": 25,
+		"dist": 0,
+		"run": {
+			"stamina": 1
+		},
+		"result": {
+			"sp": 1,
+			"gold": "15~20",
+			"player.exp": 10,
+			"title": "Master of the Cellar"
+		},
+		"loot": {
+			"maxlevel": 4
+		},
+		"log": {
+			"name": "Pests Clear",
+			"desc": "With the basement cleared your master will have more room to stash all the gold you've been earning."
+		},
+		"boss": {"25":[
+			"ratking"
+		]},
+		"spawns": [
+			[
+				"lgmouse",
+				"lgmouse"
+			],
+			"lgrat",
+			"badexperiment",
+			"ratskeleton",
+			"homunculus",
+			"gremlin"
+		]
+	},
+	{
+		"id": "stonyhills",
+		"alias": "hills",
+		"name": "Stony Hills",
+		"require": "placidgrove",
+		"level": 3,
+		"length": 25,
+		"run": {
+			"stamina": 0.75
+		},
+		"result": {
+			"gold": "10~15"
+		},
+		"loot": {
+			"maxlevel": 3
+		},
+		"biome": "hills",
+		"spawns": [
+			"coyote",
+			"warthog",
+			"kobold",
+			"goblin",
+			"smbox",
+			[
+				"bat",
+				"bat",
+				"bat"
+			],
+			[
+				"twikman",
+				"twikman"
+			],
+			"bigstone",
+			"hawk"
+		]
+	},
+	{
+		"id": "ettinmarchcamp",
+		"name": "Ettinmarch Camp",
+		"desc": "The perilous wilds of the Ettinmarch are a cherished home to bands of merry rangers and virtuous druids.",
+		"require": "evt_rangers",
+		"title": "Forest Scourge",
+		"max": 1,
+		"level": 15,
+		"length": 200,
+		"run": {
+			"stamina": 2
+		},
+		"result": {
+			"herbs": "3~7",
+			"gems": "0~2"
+		},
+		"boss": {"200":[
+			"eledin",
+			"gildella"
+		]},
+		"spawns": [
+			[
+				"ranger",
+				"ranger"
+			],
+			[
+				"elf",
+				"elf",
+				"elf",
+				"elf"
+			],
+			"beserker",
+			[
+				"roc",
+				"m_druid",
+				"roc"
+			],
+			[
+				"ranger",
+				"gryffon"
+			],
+			[
+				"m_druid",
+				"m_druid"
+			],
+			"ent",
+			[
+				"bear",
+				"bear",
+				"bear",
+				"ranger"
+			],
+			"direbear",
+			"highranger",
+			[
+				"elf",
+				"highelf"
+			],
+			[
+				"slinger",
+				"direbear"
+			]
+		]
+	},
+	{
+		"id": "fetidbarrow",
+		"name": "The Fetid Barrows",
+		"desc": "When the fetid barrows were discovered, dark acolytes gathered at the mounds seeking ancient patrons of their art.",
+		"require": "evt_cabal",
+		"max": 1,
+		"level": 15,
+		"length": 200,
+		"run": {
+			"stamina": 2
+		},
+		"result": {
+			"title": "Cabal Breaker",
+			"bones": "3~7",
+			"bodies": "0~2"
+		},
+		"boss": {"200":[
+			"palus"
+		]},
+		"spawns": [
+			[
+				"evilpriest",
+				"evilpriest",
+				"evilpriest"
+			],
+			[
+				"corpse",
+				"corpse",
+				"skeleton",
+				"corpse"
+			],
+			[
+				"ghost",
+				"ghost",
+				"wraith"
+			],
+			[
+				"evilpriest",
+				"greaterzombie"
+			],
+			[
+				"undeadhorror",
+				"undeadhorror"
+			],
+			[
+				"wight",
+				"wight",
+				"ghast"
+			],
+			"vampiremaster",
+			"skellord",
+			[
+				"m_hierophant",
+				"evilpriest",
+				"evilpriest"
+			],
+			[
+				"blasphemer",
+				"blasphemer"
+			],
+			"wraith",
+			[
+				"ghoul",
+				"ghoul",
+				"ghast",
+				"evilpriest"
+			]
+		]
+	},
+	{
+		"id": "aragheights",
+		"name": "Arag Heights",
+		"desc": "Barren mountains on the coast of Arazor.",
+		"require": "stonyhills",
+		"level": 6,
+		"run": {
+			"stamina": 1
+		},
+		"boss": "roc",
+		"result": {
+			"gold": "20~30"
+		},
+		"spawns": [
+			"lgbird",
+			[
+				"kobold",
+				"kobold",
+				"kobold"
+			],
+			"orc",
+			"bandit",
+			"wolf",
+			"hawk",
+			"goblin",
+			"coyote"
+		]
+	},
+	{
+		"id": "hauntedmanor",
+		"name": "Haunted Manor",
+		"desc": "",
+		"require": "g.spirit.max>=9",
+		"level": 6,
+		"run": {
+			"stamina": 1
+		},
+		"length": 30,
+		"result": {
+			"gold": "20~30"
+		},
+		"boss": "poltergeist",
+		"spawns": [
+			"ghost",
+			"ghost",
+			"zombie",
+			"skeleton",
+			"skeleton",
+			"direrat"
+		]
+	},
+	{
+		"id": "orccamp",
+		"name": "Orc Camp",
+		"desc": "A scourge of towns and cities.",
+		"require": "goblincamp",
+		"level": 7,
+		"run": {
+			"stamina": 1.2
+		},
+		"result": {
+			"gold": "40~50"
+		},
+		"boss": "orcchief",
+		"spawns": [
+			"orc",
+			"orcwarrior",
+			"orcwarrior",
+			"orc",
+			"orc",
+			"orcpriest"
+		],
+		"flavor": "Lok'tar!"
+	},
+	{
+		"id": "aragogres",
+		"name": "Ogre Cavern",
+		"start": {
+			"name": "Ogre Cavern",
+			"desc": "While scrying the outlying lands you discover a colossal cave in the arag heights."
+		},
+		"desc": "A scourge of towns and cities.",
+		"require": "g.orccamp>0&&g.aragheights>0&&g.scrying>0",
+		"level": 10,
+		"length": 100,
+		"run": {
+			"stamina": 1.7
+		},
+		"result": {
+			"bones": "5~10",
+			"gold": "40~50"
+		},
+		"boss": {"100":[
+			"orcchief",
+			"ogre",
+			"ogre"
+		]},
+		"spawns": [
+			"ogre",
+			[
+				"bugbear",
+				"bugbear"
+			],
+			[
+				"giantspider",
+				"lgspider",
+				"lgspider",
+				"lgspider"
+			],
+			[
+				"ogre",
+				"warg",
+				"warg"
+			],
+			"orcwarrior",
+			[
+				"ogrewarrior",
+				"ogrewarrior"
+			],
+			"troll",
+			"minotaur",
+			[
+				"vampirebat",
+				"vampirebat",
+				"vampirebat"
+			],
+			[
+				"ogre",
+				"wolf",
+				"wolf",
+				"wolf"
+			],
+			"hillgiant",
+			"direbear",
+			"ettin",
+			"orcchief",
+			[
+				"orcpriest",
+				"ogre",
+				"ogre"
+			]
+		]
+	},
+	{
+		"id": "spidercave",
+		"name": "Skittering Caverns",
+		"desc": "The only treasures here, are those lost by adventurers searching for treasure.",
+		"require": "tier0",
+		"level": 7,
+		"run": {
+			"stamina": 1.2
+		},
+		"result": {
+			"title": "Spider Slayer",
+			"gold": "40~50"
+		},
+		"boss": "spiderqueen",
+		"spawns": [
+			"giantspider",
+			"kobold",
+			{
+				"ids": "jazid",
+				"weight": 0.1
+			},
+			[
+				"lgspider",
+				"lgspider"
+			],
+			"lgspider",
+			"lgspider",
+			"direbat"
+		]
+	},
+	{
+		"id": "aragwastes",
+		"name": "Arag Wastes",
+		"desc": "An arid plain stretching across Arazor from the Arag Heights.",
+		"require": "aragheights",
+		"level": 8,
+		"run": {
+			"stamina": 2
+		},
+		"boss": "roc",
+		"result": {
+			"gold": "20~30",
+			"bones": "3~7"
+		},
+		"spawns": [
+			"vulture",
+			"minotaur",
+			"orc",
+			"warg",
+			[
+				"vrrek",
+				"vrrek"
+			],
+			[
+				"m_scarab",
+				"m_scarab"
+			],
+			"bandit",
+			"wolf",
+			"sandmite",
+			"bugbear",
+			"hawk",
+			"goblin",
+			[
+				"vulture",
+				"vulture",
+				"vulture"
+			],
+			[
+				"coyote",
+				"coyote",
+				"coyote"
+			]
+		]
+	},
+	{
+		"id": "catacrypts",
+		"name": "The Catacrypts",
+		"desc": "Old Mirthemgnar dug its dungeons til they joined the hollows beneath the world. In terror they sealed them forever. Or so they tried.",
+		"require": [
+			"mtgorborung",
+			"tier3"
+		],
+		"level": 15,
+		"run": {
+			"stamina": 3
+		},
+		"length": 10000,
+		"result": {
+			"title": "Twice Born",
+			"fame": 3,
+			"gems": "30~50",
+			"gold": "1000~2000"
+		},
+		"biome": [
+			"cave",
+			"mountain"
+		],
+		"spawns": {
+			"level": "15~23",
+			"range": 2
+		},
+		"flavor": "Day and night the dark gates stand open to all... but to return to the open air... that is the task, that is the labor"
+	},
+	{
+		"id": "elementrift",
+		"name": "Elemental Rift",
+		"desc": "A tear in the fabric of reality leads to a land of raw elements.",
+		"require": "g.planeslore>=7",
+		"level": 12,
+		"run": {
+			"stamina": 4
+		},
+		"length": 50,
+		"result": {
+			"gems": "9~12",
+			"lightgem":3
+		},
+		"boss": "lightningelemental",
+		"spawns": [
+			"fireelemental",
+			"iceelemental",
+			"earthelemental",
+			"airelemental",
+			"lightningelemental"
+		]
+	},
+	{
+		"id": "temple of strativax",
+		"desc": "His acolytes fed the beast on offerings from a thousand leagues.",
+		"flavor": "Strativax curled up to nap. His temple fell to ruins, and the ages fled like leaves.",
+		"require": "g.scrying>=12&&g.history>=12",
+		"start": "You scry the location of an ancient ruined temple.",
+		"level": 20,
+		"length":3,
+		"boss": {
+			"1": "strativax1",
+			"2": "strativax2",
+			"3": "strativax3"
+		}
+	},
+	{
+		"id": "holyhall",
+		"name": "Hall of the Holy",
+		"desc": "Various divine spirits watch over the world. And the greatest have their halls and kingdoms.",
+		"require": "g.planeslore.max>=12&&g.evil>0",
+		"level": 17,
+		"length": 50,
+		"run": {
+			"stamina": 2
+		},
+		"result": {
+			"title": "Holy Defiler",
+			"evilamt": 10,
+			"gold": "150~275"
+		},
+		"boss": "archon",
+		"spawns": [
+			"angel",
+			[
+				"valkyrie",
+				"valkyrie"
+			],
+			[
+				"gryffon",
+				"gryffon"
+			],
+			"mithrilgolem",
+			"angel",
+			"firegolem",
+			[
+				"angel",
+				"angel"
+			],
+			[
+				"lightelem",
+				"lightelem",
+				"lightelem"
+			],
+			[
+				"roc",
+				"roc",
+				"roc"
+			],
+			[
+				"unicorn",
+				"unicorn"
+			],
+			[
+				"ghost",
+				"ghost",
+				"ghost"
+			],
+			[
+				"pegasus",
+				"pegasus",
+				"pegasus"
+			]
+		]
+	}
+]

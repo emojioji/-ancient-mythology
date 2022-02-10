@@ -1,0 +1,718 @@
+[
+	{
+		"id": "gloves",
+		"name": "皮手套",
+		"armor": 1,
+		"slot": "hands",
+		"cost": 20,
+		"enchants": 1,
+		"only": "cloth,leather"
+	},
+	{
+		"id": "boots",
+		"name": "布鞋",
+		"armor": 1,
+		"slot": "feet",
+		"cost": 20,
+		"enchants": 1,
+		"only": "cloth,leather,metal"
+	},
+	{
+		"id": "hat",
+		"name": "小帽子",
+		"armor": 0,
+		"slot": "head",
+		"cost": 10
+	},
+	{
+		"id": "fc_helmet",
+		"name": "云翼头盔",
+		"armor": 3,
+		"slot": "head",
+		"enchants": 1,
+		"level": 2,
+		"cost": 10
+	},
+	{
+		"id": "fc_armor",
+		"name": "云翼护甲",
+		"armor": 5,
+		"slot": "chest",
+		"enchants": 1,
+		"cost": 10,
+		"level": 2
+	},
+	{
+		"id": "fc_shins",
+		"name": "云翼护腿",
+		"armor": 4,
+		"slot": "shins",
+		"enchants": 1,
+		"cost": 10,
+		"level": 2
+	},
+	{
+		"id": "fc_foot",
+		"name": "云翼战靴",
+		"armor": 2,
+		"slot": "feet",
+		"enchants": 1,
+		"cost": 10,
+		"level": 2
+	},
+	{
+		"id": "xsp",
+		"name": "修士袍",
+		"armor": 5,
+		"slot": "chest",
+		"enchants": 2,
+		"level": 10,
+		"cost": 10,
+		"alter": {
+			"mod": {
+				"self.resist.chaos": 2
+			}
+		},
+		"only": "sjmet"
+	},
+	{
+		"id": "xsl",
+		"name": "修士履",
+		"armor": 4,
+		"slot": "feet",
+		"enchants": 2,
+		"cost": 10,
+		"level": 10,
+		"alter": {
+			"mod": {
+				"self.resist.chaos": 1
+			}
+		},
+		"only": "sjmet"
+	},
+	{
+		"id": "xsg",
+		"name": "修士冠",
+		"armor": 5,
+		"slot": "head",
+		"enchants": 2,
+		"cost": 10,
+		"level": 10,
+		"alter": {
+			"mod": {
+				"self.resist.heli": 2
+			}
+		},
+		"only": "sjmet"
+	},
+	{
+		"id": "xsyd",
+		"name": "修士鞶带",
+		"armor": 4,
+		"slot": "waist",
+		"enchants": 1,
+		"cost": 10,
+		"level": 9,
+		"alter": {
+			"mod": {
+				"self.resist.chaos": 2
+			}
+		},
+		"only": "sjmet"
+	},
+	{
+		"id": "jerkin",
+		"name": "坎肩",
+		"armor": 2,
+		"slot": "chest",
+		"cost": 100,
+		"level": 1,
+		"only": "natural,leather,cloth"
+	},
+	{
+		"id": "pants",
+		"name": "皮裤",
+		"armor": 2,
+		"slot": "shins",
+		"cost": 100,
+		"level": 1,
+		"only": "natural,leather,cloth"
+	},
+	{
+		"id": "tian_core",
+		"name": "合理转化炉[BASE]",
+		"desc": "初代微型化合理转化炉,使用合理催动内置线圈进行发电",
+		"color": "#2ECC71",
+		"equneed":"g.base>=1",
+		"armor": 0,
+		"slot": "trinket",
+		"enchants": 3,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"heli.rate": -1,
+				"shenshi.max": -1,
+				"elect.max": 10,
+				"elect.rate": 3
+			}
+		},
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "tian_helmet",
+		"name": "钛合头盔[BASE]",
+		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
+		"color": "#2ECC71",
+		"equneed":"g.base>=1",
+		"armor": 6,
+		"slot": "head",
+		"enchants": 3,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 5,
+				"self.resist.wood": 5,
+				"self.resist.fire": 5,
+				"self.resist.land": 5,
+				"self.resist.gold": 5,
+				"self.resist.water": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -0.5
+			}
+		},
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "wuyuewang",
+		"name": "无月望[AL]",
+		"desc": "无光技术打造的AL级头盔",
+		"color": "#2980B9",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "head",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 5,
+				"self.resist.chaos": 6,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "ninghuomianjiu",
+		"name": "凝火面具[AL]",
+		"color": "#2980B9",
+		"desc": "燃烧之眼",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "head",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 5,
+				"self.resist.fire": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "ninghuopijian",
+		"name": "凝火披肩[AL]",
+		"color": "#2980B9",
+		"desc": "大火",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "back",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 5,
+				"self.resist.fire": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "ninghuosuyao",
+		"name": "凝火束腰[AL]",
+		"desc": "大火",
+		"color": "#2980B9",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "waist",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 5,
+				"self.resist.fire": 4,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "tian_chest",
+		"name": "钛合装甲[BASE]",
+		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
+		"color": "#2ECC71",
+		"equneed":"g.base>=1",
+		"armor": 12,
+		"slot": "chest",
+		"enchants": 3,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 10,
+				"self.resist.wood": 10,
+				"self.resist.fire": 10,
+				"self.resist.land": 10,
+				"self.resist.gold": 10,
+				"self.resist.water": 10,
+				"shenshi.max": -1,
+				"elect.max": -5,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "wuyuejing",
+		"name": "无月镜[AL]",
+		"desc": "无光技术打造的AL级护甲",
+		"color": "#2980B9",
+		"equneed":"g.AL>=1",
+		"armor": 15,
+		"slot": "chest",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 10,
+				"self.resist.chaos": 12,
+				"shenshi.max": -1,
+				"elect.max": -5,
+				"elect.rate": -2
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "zidianjing",
+		"name": "紫电镜[AL]",
+		"desc": "奔腾如雷",
+		"color": "#2980B9",
+		"equneed":"g.AL>=1",
+		"armor": 15,
+		"slot": "chest",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 10,
+				"self.resist.water": 12,
+				"shenshi.max": -1,
+				"elect.max": -5,
+				"elect.rate": -2
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "tian_shins",
+		"name": "钛合护腿[BASE]",
+		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
+		"color": "#2ECC71",
+		"equneed":"g.base>=1",
+		"armor": 8,
+		"slot": "shins",
+		"enchants": 3,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 7,
+				"self.resist.wood": 5,
+				"self.resist.fire": 5,
+				"self.resist.land": 5,
+				"self.resist.gold": 5,
+				"self.resist.water": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -0.6
+			}
+		},
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "wuyul",
+		"name": "无月之旅[AL]",
+		"desc": "无光技术打造的AL级护腿",
+		"color": "#2980B9",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "shins",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 7,
+				"self.resist.chaos": 5,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "zidianta",
+		"name": "紫电踏[AL]",
+		"desc": "奔腾如雷",
+		"color": "#2980B9",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "shins",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 7,
+				"self.resist.water": 8,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "zidianci",
+		"name": "紫电刺[AL]",
+		"desc": "奔腾如雷",
+		"color": "#2980B9",
+		"equneed":"g.AL>=1",
+		"armor": 10,
+		"slot": "hands",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 7,
+				"self.resist.water": 7,
+				"shenshi.max": -1,
+				"elect.max": -3,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "tian_foot",
+		"name": "钛合护足[BASE]",
+		"desc": "第一代智能化护甲,搭载小型电动传导装置,防护能力有限",
+		"color": "#2ECC71",
+		"equneed":"g.base>=1",
+		"armor": 5,
+		"slot": "feet",
+		"enchants": 3,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 4,
+				"self.resist.wood": 3,
+				"self.resist.fire": 3,
+				"self.resist.land": 3,
+				"self.resist.gold": 3,
+				"self.resist.water": 3,
+				"shenshi.max": -1,
+				"elect.max": -1,
+				"elect.rate": -0.4
+			}
+		},
+		"flavor": "装备需求:[BASE]级神机"
+	},
+	{
+		"id": "wuyuwo",
+		"name": "无月之握[AL]",
+		"desc": "无光技术打造的AL级护手",
+		"color": "#2980B9",
+		"equneed":"g.AL>=1",
+		"armor": 6,
+		"slot": "hands",
+		"enchants": 3,
+		"cost": 10,
+		"level": 30,
+		"alter": {
+			"mod": {
+				"f_power": 4,
+				"self.resist.chaos": 5,
+				"shenshi.max": -1,
+				"elect.max": -1,
+				"elect.rate": -1
+			}
+		},
+		"flavor": "装备需求:[AL]级神机"
+	},
+	{
+		"id": "yqlp",
+		"name": "御气罗盘",
+		"desc": "能帮助使用者速度更快",
+		"color": "#2ECC71",
+		"armor": 2,
+		"slot": "back",
+		"enchants": 1,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 2,
+				"self.speed": 2
+			}
+		}
+	},
+	{
+		"id": "cbxl",
+		"name": "纯白项链",
+		"desc": "提高对金的抗性",
+		"color": "#2ECC71",
+		"armor": 2,
+		"slot": "neck",
+		"enchants": 1,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 2,
+				"self.resist.gold": 3
+			}
+		}
+	},
+	{
+		"id": "cbbz",
+		"name": "纯白扳指",
+		"desc": "提高对金的抗性",
+		"color": "#2ECC71",
+		"armor": 3,
+		"slot": "fingers",
+		"kind": "ring",
+		"enchants": 1,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 2,
+				"self.resist.gold": 2
+			}
+		}
+	},
+	{
+		"id": "cbzw",
+		"name": "纯白之握",
+		"desc": "提高对金的抗性",
+		"color": "#2ECC71",
+		"armor": 5,
+		"slot": "hands",
+		"enchants": 1,
+		"cost": 10,
+		"level": 20,
+		"alter": {
+			"mod": {
+				"f_power": 2,
+				"self.resist.gold": 2
+			}
+		}
+	},
+	{
+		"id": "padded armor",
+		"armor": 3,
+		"slot": "chest",
+		"cost": 150,
+		"level": 4,
+		"only": "leather,cloth"
+	},
+	{
+		"id": "chainmail",
+		"armor": 5,
+		"slot": "chest",
+		"cost": 350,
+		"level": 5,
+		"enchants": 2,
+		"only": "metal,ethereal"
+	},
+	{
+		"id": "plate mail",
+		"armor": 8,
+		"slot": "chest",
+		"cost": 700,
+		"level": 9,
+		"enchants": 2,
+		"only": "metal,ethereal"
+	},
+	{
+		"id": "robe",
+		"armor": 0,
+		"slot": "chest",
+		"cost": 50,
+		"only": "cloth",
+		"enchants": 10
+	},
+	{
+		"id": "conical helm",
+		"armor": 3,
+		"slot": "head",
+		"cost": 40,
+		"only": "metal,ethereal"
+	},
+	{
+		"id": "belt",
+		"armor": 0,
+		"slot": "waist",
+		"cost": 30,
+		"enchants": 2,
+		"only": "natural,cloth"
+	},
+	{
+		"id": "girdle",
+		"armor": 1,
+		"slot": "waist",
+		"cost": 50
+	},
+	{
+		"id": "cincture",
+		"armor": 1,
+		"slot": "waist",
+		"cost": 50,
+		"enchants": 3
+	},
+	{
+		"id": "sash",
+		"armor": 0,
+		"slot": "waist",
+		"cost": 10,
+		"only": "cloth",
+		"enchants": 3
+	},
+	{
+		"id": "cape",
+		"armor": 0,
+		"slot": "back",
+		"cost": 50,
+		"only": "cloth",
+		"enchants": 3
+	},
+	{
+		"id": "cloak",
+		"armor": 1,
+		"slot": "back",
+		"cost": 50,
+		"only": "cloth",
+		"enchants": 5
+	},
+	{
+		"id": "wings",
+		"armor": 1,
+		"slot": "back",
+		"level": 20,
+		"cost": 5000,
+		"properties": "10%",
+		"enchants": 4
+	},
+	{
+		"id": "greaves",
+		"armor": 1,
+		"slot": "shins",
+		"cost": 30
+	},
+	{
+		"id": "pendant",
+		"armor": 0,
+		"slot": "neck",
+		"cost": 300,
+		"properties": "5%",
+		"enchants": 4
+	},
+	{
+		"id": "collar",
+		"armor": 1,
+		"slot": "neck",
+		"cost": 30,
+		"enchants": 2
+	},
+	{
+		"id": "amulet",
+		"armor": 0,
+		"slot": "neck",
+		"cost": 500,
+		"level": 15,
+		"properties": "10%",
+		"enchants": 5
+	},
+	{
+		"id": "necklace",
+		"armor": 0,
+		"slot": "neck",
+		"cost": 50,
+		"properties": "1%",
+		"enchants": 3
+	},
+	{
+		"id": "band",
+		"armor": 0,
+		"slot": "fingers",
+		"kind": "ring",
+		"cost": 50,
+		"level": 3,
+		"properties": "1%",
+		"enchants": 3
+	},
+	{
+		"id": "loop",
+		"armor": 0,
+		"slot": "fingers",
+		"kind": "ring",
+		"cost": 10,
+		"level": 1,
+		"enchants": 2
+	},
+	{
+		"id": "ring",
+		"name":"戒指",
+		"armor": 0,
+		"slot": "fingers",
+		"kind": "ring",
+		"level": 5,
+		"cost": 100,
+		"properties": "3%",
+		"enchants": 5
+	}
+]

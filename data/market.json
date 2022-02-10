@@ -1,0 +1,862 @@
+[
+	{
+		"id": "market_sell_zero_crystal",
+		"name": "出售零结晶",
+		"desc": "出售多余的零结晶换钱",
+		"require": "g.market_un>0&&g.zero_crystal>=1",
+		"cost": {
+			"zero_crystal": 1
+		},
+		"result": {
+			"money": 6
+		}
+	},
+	{
+		"id": "market_buy_zero_crystal",
+		"name": "购买零结晶",
+		"desc": "购买零结晶以备不时之需",
+		"require": "g.market_un>0&&g.zero_crystal>=1",
+		"cost": {
+			"money": 50
+		},
+		"result": {
+			"zero_crystal": 1
+		}
+	},
+	{
+		"id": "market_shortsword",
+		"name": "短剑",
+		"desc": "一把好用的短剑",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 10
+		},
+		"loot": {
+			"shortsword": "100%"
+		}
+	},
+	{
+		"id": "market_handaxe",
+		"name": "手斧",
+		"desc": "一把好用的手斧",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 10
+		},
+		"loot": {
+			"handaxe": "100%"
+		}
+	},
+	{
+		"id": "market_gloves",
+		"name": "皮手套",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 5
+		},
+		"loot": {
+			"gloves": "100%"
+		}
+	},
+	{
+		"id": "market_boots",
+		"name": "布鞋",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 3
+		},
+		"loot": {
+			"boots": "100%"
+		}
+	},
+	{
+		"id": "market_hat",
+		"name": "小帽子",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 3
+		},
+		"loot": {
+			"hat": "100%"
+		}
+	},
+	{
+		"id": "market_jerkin",
+		"name": "坎肩",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 7
+		},
+		"loot": {
+			"jerkin": "100%"
+		}
+	},
+	{
+		"id": "market_pants",
+		"name": "皮裤",
+		"require": "g.market_un>0",
+		"cost": {
+			"money": 5
+		},
+		"loot": {
+			"pants": "100%"
+		}
+	},
+	{
+		"id": "market_fch",
+		"name": "云翼头盔",
+		"require": "g.bio_metal_1>=1",
+		"cost": {
+			"iron_copper": 3
+		},
+		"loot": {
+			"fc_helmet": "100%"
+		}
+	},
+	{
+		"id": "market_fca",
+		"name": "云翼护甲",
+		"require": "g.bio_metal_1>=1",
+		"cost": {
+			"iron_copper": 4
+		},
+		"loot": {
+			"fc_armor": "100%"
+		}
+	},
+	{
+		"id": "market_fcs",
+		"name": "云翼护腿",
+		"require": "g.bio_metal_1>=1",
+		"cost": {
+			"iron_copper": 3
+		},
+		"loot": {
+			"fc_shins": "100%"
+		}
+	},
+	{
+		"id": "market_fcf",
+		"name": "云翼战靴",
+		"require": "g.bio_metal_1>=1",
+		"cost": {
+			"iron_copper": 2
+		},
+		"loot": {
+			"fc_foot": "100%"
+		}
+	},
+	{
+		"id": "market_sj_sword_1",
+		"name": "神识流剑",
+		"require": "g.sj_met>=5 &&g.metal_app>=5",
+		"cost": {
+			"sj_met": 5
+		},
+		"loot": {
+			"sj_sword_1": "100%"
+		}
+	},
+	{
+		"id": "market_ys_sword",
+		"name": "幽蚀之锋",
+		"require": "g.fanshe_metal>=3",
+		"cost": {
+			"money": 320,
+			"zero_crystal": 10,
+			"sj_met": 8,
+			"shuaibai_core": 5,
+			"dirty_core": 5,
+			"tian": 6
+		},
+		"loot": {
+			"ys_sword": "100%"
+		}
+	},
+	{
+		"id": "market_sgcd",
+		"name": "碎骨长刀",
+		"require": "g.wuzhuojieshi>=3",
+		"cost": {
+			"money": 320,
+			"sj_met": 8,
+			"dirty_core": 20,
+			"tian": 3
+		},
+		"loot": {
+			"suiguchangdao": "100%"
+		}
+	},
+	{
+		"id": "market_xsp",
+		"name": "修士袍",
+		"require": "g.sj_met>=1 &&g.metal_app>=5",
+		"cost": {
+			"money": 120,
+			"zero_crystal": 5,
+			"sj_met": 5
+		},
+		"loot": {
+			"xsp": "100%"
+		}
+	},
+	{
+		"id": "market_xsl",
+		"name": "修士履",
+		"require": "g.sj_met>=1 &&g.metal_app>=5",
+		"cost": {
+			"money": 100,
+			"zero_crystal": 3,
+			"sj_met": 5
+		},
+		"loot": {
+			"xsl": "100%"
+		}
+	},
+	{
+		"id": "market_xsg",
+		"name": "修士冠",
+		"require": "g.sj_met>=1 &&g.metal_app>=5",
+		"cost": {
+			"money": 120,
+			"zero_crystal": 5,
+			"sj_met": 5
+		},
+		"loot": {
+			"xsg": "100%"
+		}
+	},
+	{
+		"id": "market_xsyd",
+		"name": "修士鞶带",
+		"require": "g.sj_met>=1 &&g.metal_app>=5",
+		"cost": {
+			"money": 100,
+			"zero_crystal": 3,
+			"sj_met": 5
+		},
+		"loot": {
+			"xsyd": "100%"
+		}
+	},
+	{
+		"id": "market_tianh",
+		"name": "钛合头盔[BASE]",
+		"require": "g.sjkzl>=1",
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 25,
+			"ganwu": 350,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 8,
+			"shuaibai_core": 5,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"tian_helmet": "100%"
+		}
+	},
+	{
+		"id": "market_wuyuew",
+		"name": "无月望[AL-头盔]",
+		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 25,
+			"ganwu": 350,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 8,
+			"shuaibai_core": 5,
+			"nolight_core": 5,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"wuyuewang": "100%"
+		}
+	},
+	{
+		"id": "market_nmhmj",
+		"name": "凝火面具[AL-头盔]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
+		"cost": {
+			"lg": 11,
+			"gwl": 10,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 25,
+			"ganwu": 350,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 8,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"ninghuomianjiu": "100%"
+		}
+	},
+	{
+		"id": "market_nmpj",
+		"name": "凝火披肩[AL-背部]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
+		"cost": {
+			"lg": 11,
+			"gwl": 10,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 25,
+			"ganwu": 350,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 8,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"ninghuopijian": "100%"
+		}
+	},
+	{
+		"id": "market_nmsy",
+		"name": "凝火束腰[AL-腰部]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
+		"cost": {
+			"lg": 11,
+			"gwl": 10,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 25,
+			"ganwu": 350,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 8,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"ninghuosuyao": "100%"
+		}
+	},
+	{
+		"id": "market_tianc",
+		"name": "钛合装甲[BASE]",
+		"require": "g.sjkzl>=1",
+		"cost": {
+			"lg": 11,
+			"zero_crystal": 30,
+			"jls": 40,
+			"money": 670,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 20,
+			"shuaibai_core": 8,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"tian_chest": "100%"
+		}
+	},
+	{
+		"id": "market_wuyuej",
+		"name": "无月镜[AL-护甲]",
+		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
+		"cost": {
+			"lg": 11,
+			"zero_crystal": 30,
+			"jls": 40,
+			"money": 670,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 20,
+			"shuaibai_core": 8,
+			"nolight_core": 10,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"wuyuejing": "100%"
+		}
+	},
+	{
+		"id": "market_zidianj",
+		"name": "紫电明镜[AL-护甲]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.yjdl>=1",
+		"cost": {
+			"lg": 11,
+			"yjdl": 10,
+			"zero_crystal": 30,
+			"jls": 40,
+			"money": 670,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"zidianjing": "100%"
+		}
+	},
+	{
+		"id": "market_tians",
+		"name": "钛合护腿[BASE]",
+		"require": "g.sjkzl>=1",
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 570,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"shuaibai_core": 8,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"tian_shins": "100%"
+		}
+	},
+	{
+		"id": "market_wuyuzl",
+		"name": "无月之旅[AL-护腿]",
+		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 570,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"shuaibai_core": 8,
+			"nolight_core": 10,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"wuyul": "100%"
+		}
+	},
+	{
+		"id": "market_zidianta",
+		"name": "紫电踏[AL-护腿]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.yjdl>=1",
+		"cost": {
+			"lg": 11,
+			"yjdl": 7,
+			"zero_crystal": 30,
+			"jls": 40,
+			"money": 670,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 14
+		},
+		"loot": {
+			"zidianta": "100%"
+		}
+	},
+	{
+		"id": "market_tianf",
+		"name": "钛合护足[BASE]",
+		"require": "g.sjkzl>=1",
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"zero_crystal": 20,
+			"money": 520,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 7,
+			"shuaibai_core": 3,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"tian_foot": "100%"
+		}
+	},
+	{
+		"id": "market_wuyuzw",
+		"name": "无月之握[AL-护手]",
+		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 570,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"shuaibai_core": 8,
+			"nolight_core": 10,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"wuyuwo": "100%"
+		}
+	},
+	{
+		"id": "market_zdianci",
+		"name": "紫电刺[AL-护手]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.yjdl>=1",
+		"cost": {
+			"yjdl": 10,
+			"lg": 11,
+			"jls": 40,
+			"money": 570,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"super_mind": 20,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"zidianci": "100%"
+		}
+	},
+	{
+		"id": "market_wuyuemijian",
+		"name": "无月秘剑[AL-武器]",
+		"require": "g.sjkzl>=1 && g.nolight_mike>=5",
+		"cost": {
+			"lg": 11,
+			"jls": 40,
+			"money": 570,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"shuaibai_core": 10,
+			"nolight_core": 10,
+			"super_mind": 20,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"wuyuemijian": "100%"
+		}
+	},
+	{
+		"id": "market_yhdd",
+		"name": "阳火大刀[AL-武器]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.gwl>=1",
+		"cost": {
+			"gwl": 10,
+			"cbclb": 2,
+			"lg": 11,
+			"jls": 40,
+			"money": 570,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"shuaibai_core": 7,
+			"super_mind": 20,
+			"exe_paper": 16
+		},
+		"loot": {
+			"yanghuodadoa": "100%"
+		}
+	},
+	{
+		"id": "market_zhenchanjian",
+		"name": "震颤剑[AL-武器]",
+		"require": "g.xiulian_jihe_fuzajianzhu>=1 && g.cbclb>=1",
+		"cost": {
+			"cbclb": 10,
+			"lg": 11,
+			"jls": 40,
+			"money": 500,
+			"zero_crystal": 30,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 15,
+			"shuaibai_core": 10,
+			"super_mind": 20,
+			"exe_paper": 16
+		},
+		"loot": {
+			"zhenchanjian": "100%"
+		}
+	},
+	{
+		"id": "market_tiane",
+		"name": "合理转化炉[BASE]",
+		"require": "g.sjkzl>=1",
+		"cost": {
+			"lg": 11,
+			"jls": 50,
+			"heli": 30,
+			"zero_crystal": 30,
+			"dirty_core": 10,
+			"money": 700,
+			"ganwu": 450,
+			"super_mind": 9,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 20,
+			"shuaibai_core": 10,
+			"super_mind": 9,
+			"tian": 10,
+			"star_map": 50,
+			"paper": 40,
+			"books": 9,
+			"exe_paper": 16
+		},
+		"loot": {
+			"tian_core": "100%"
+		}
+	},
+	{
+		"id": "market_yqlp",
+		"name": "御气罗盘",
+		"require": "g.jjclx>=3",
+		"cost": {
+			"cbjs": 5,
+			"lg": 11,
+			"jls": 50,
+			"heli": 30,
+			"zero_crystal": 20,
+			"dirty_core": 5,
+			"money": 300,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 4,
+			"shuaibai_core": 2,
+			"tian": 10
+		},
+		"loot": {
+			"yqlp": "100%"
+		}
+	},
+	{
+		"id": "market_cbxl",
+		"name": "纯白项链",
+		"require": "g.jjclx>=3",
+		"cost": {
+			"cbjs": 5,
+			"lg": 11,
+			"jls": 30,
+			"heli": 30,
+			"zero_crystal": 7,
+			"dirty_core": 5,
+			"money": 100,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 4,
+			"shuaibai_core": 2,
+			"tian": 10
+		},
+		"loot": {
+			"cbxl": "100%"
+		}
+	},
+	{
+		"id": "market_cbbz",
+		"name": "纯白扳指",
+		"require": "g.jjclx>=3",
+		"cost": {
+			"cbjs": 5,
+			"lg": 11,
+			"jls": 30,
+			"heli": 30,
+			"zero_crystal": 7,
+			"dirty_core": 5,
+			"money": 100,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 4,
+			"shuaibai_core": 2,
+			"tian": 10
+		},
+		"loot": {
+			"cbbz": "100%"
+		}
+	},
+	{
+		"id": "market_cbzw",
+		"name": "纯白之握",
+		"require": "g.jjclx>=3",
+		"cost": {
+			"cbjs": 5,
+			"lg": 11,
+			"jls": 30,
+			"heli": 30,
+			"zero_crystal": 7,
+			"dirty_core": 5,
+			"money": 100,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 200,
+			"cold_core": 4,
+			"shuaibai_core": 2,
+			"tian": 10
+		},
+		"loot": {
+			"cbzw": "100%"
+		}
+	},
+	{
+		"id": "market_basezd",
+		"name": "紫电[BASE]-武器",
+		"require": "g.cbclb>=1",
+		"cost": {
+			"cbclb": 15,
+			"cbjs": 5,
+			"lg": 11,
+			"zero_crystal": 15,
+			"dirty_core": 5,
+			"money": 700,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 500,
+			"cold_core": 10
+		},
+		"loot": {
+			"base_zd": "100%"
+		}
+	},
+	{
+		"id": "market_baserndn",
+		"name": "热能电刀[BASE]-武器",
+		"require": "g.gwwlx>=4",
+		"cost": {
+			"yxls": 10,
+			"tian": 10,
+			"lg": 11,
+			"zero_crystal": 15,
+			"dirty_lingti": 5,
+			"money": 700,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 500,
+			"cold_core": 10
+		},
+		"loot": {
+			"base_rndd": "100%"
+		}
+	},
+	{
+		"id": "market_basefeijian",
+		"name": "飞剑[BASE]-武器",
+		"require": "g.xiulian_energ_xtcd>=1",
+		"cost": {
+			"wgys": 10,
+			"tian": 10,
+			"lg": 11,
+			"zero_crystal": 15,
+			"dirty_lingti": 5,
+			"money": 700,
+			"ganwu": 150,
+			"alculation": 100,
+			"human_power": 500,
+			"cold_core": 10
+		},
+		"loot": {
+			"base_feijian": "100%"
+		}
+	}
+]
